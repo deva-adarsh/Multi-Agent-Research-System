@@ -1,10 +1,5 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipeline.pipeline import run_search_pipeline
 
-result = web_search.invoke(
-    "What is the latest news about AI?"
-)
-
-web_result=scrape_url.invoke(
-    "https://techcrunch.com/category/artificial-intelligence/"
-)
-print(web_result)
+topic="How will AI Helpful in studies?"
+result=run_search_pipeline(topic)
+print("\n\n Final Result \n",result)

@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.streamlit/secrets.toml
+research_report_*.md
